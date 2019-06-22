@@ -1,0 +1,19 @@
+Installation instructions
+============================
+1.gunzip GenConstraint.tar.gz
+2.tar xfv GenConstraint.tar. After this command the directory GenConstraint will be created.
+3. cd GenConstraint
+4. Open with an editor the file Makefile.inc. In most cases, the user should change only the last variable ROOTDIR in order and he should setup the variable to refer to the current installation directory.
+5. Issue the command make.
+6. The final outcome of the compilation is the command line utility make_program located under the bin subdirectory.
+
+
+Directory structure
+================================
+1. Makefile the main make file of the application
+2. Makefile.inc  a file contains variables for the make utility
+3. src The directory that contains the source files of the distribution
+4. include The directory that contains the include (header files) of the distribution
+5. bin In this directory the executable make_program will be saved
+6. examples The directory that contains some examples of constrained optimization problems.
+7. doc The directory with the documentation of the software
